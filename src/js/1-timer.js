@@ -44,18 +44,12 @@ flatpickr('#datetime-picker', options);
 
 const timer = {
   intervalId: null,
-  initTime: null,
 
   start() {
     if (this.intervalId) {
       return;
     }
 
-    this.initTime = Date.now();
-    if (!this.intervalId) {
-      refs.startBtn.disabled = true;
-      refs.timerInput.disabled = true;
-    }
     console.log('start timer');
     this.intervalId = setInterval(() => {
       this.tick();
