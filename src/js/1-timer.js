@@ -50,6 +50,11 @@ const timer = {
       return;
     }
 
+    if (!this.intervalId) {
+      refs.startBtn.disabled = true;
+      refs.timerInput.disabled = true;
+    }
+
     console.log('start timer');
     this.intervalId = setInterval(() => {
       this.tick();
