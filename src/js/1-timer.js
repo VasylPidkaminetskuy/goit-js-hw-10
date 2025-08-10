@@ -29,6 +29,8 @@ const options = {
       iziToast.show({
         message: 'Please choose a date in the future',
         position: 'topRight',
+        messageColor: '#fff',
+        backgroundColor: '#ef4040',
       });
       refs.startBtn.disabled = true;
       return;

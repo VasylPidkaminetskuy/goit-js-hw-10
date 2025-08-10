@@ -1,0 +1,22 @@
+.nav-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 36px;
+}
+
+.nav-link {
+    display: block;
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(255, 200, 250, 0.3), rgba(200, 255, 250, 0.3));
+    transition: background, 0.3s ease-in-out, color;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: white;
+    background: linear-gradient(135deg, rgba(50, 30, 100, 0.5), rgba(20, 60, 80, 0.5));
+}
