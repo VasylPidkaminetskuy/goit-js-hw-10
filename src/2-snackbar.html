@@ -4,32 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Snackbar</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <main>
-      <form class="form">
-        <label>
-          Delay (ms)
-          <input type="number" name="delay" required />
-        </label>
-
-        <fieldset>
-          <legend>State</legend>
-          <label>
-            <input type="radio" name="state" value="fulfilled" required />
-            Fulfilled
+      <div class="container">
+        <form class="form">
+          <label class="delay-input-label">
+            Delay (ms)
+            <input class="delay-input" type="number" name="delay" required />
           </label>
-          <label>
-            <input type="radio" name="state" value="rejected" required />
-            Rejected
-          </label>
-        </fieldset>
 
-        <button type="submit">Create notification</button>
-      </form>
+          <fieldset class="fieldset-input">
+            <legend class="label-radio-input">State</legend>
+            <label class="label-fulfiled">
+              <input type="radio" name="state" value="fulfilled" required />
+              Fulfilled
+            </label>
+            <label class="label-rejected">
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </fieldset>
 
+          <button class="form-delay-btn" type="submit">
+            Create notification
+          </button>
+        </form>
+      </div>
       <script type="module" src="./js/2-snackbar.js"></script>
     </main>
   </body>
